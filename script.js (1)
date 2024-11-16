@@ -1,0 +1,27 @@
+function showMessage() {
+    document.getElementById("message").innerText = "تم النقر على الزر!";
+}function uploadFiles() {
+  const fileInput = document.getElementById('fileInput');
+  const fileList = document.getElementById('fileList');
+  
+  // عرض الملفات المرفوعة
+  for (const file of fileInput.files) {
+    const li = document.createElement('li');
+    li.textContent = file.name;
+    fileList.appendChild(li);
+  }
+
+  alert('تم رفع الملفات بنجاح (محليًا فقط، بدون تخزين في سيرفر)!');
+}function uploadFiles() {
+  const fileInput = document.getElementById('fileInput');
+  const fileList = document.getElementById('fileList');
+  
+  // عرض الملفات المرفوعة
+  for (const file of fileInput.files) {
+    const li = document.createElement('li');
+    li.textContent = file.name;
+    fileList.appendChild(li);
+  }
+
+  alert('تم رفع الملفات بنجاح إلى موقع حسن نيت (محليًا فقط، بدون تخزين في سيرفر)!');
+}
